@@ -242,6 +242,10 @@
         }
       }
 
+      .reason-mobile {
+        display: none;
+      }
+
       @media (max-width: 420px) {
         .card {
           padding: 36px 24px 28px;
@@ -252,6 +256,12 @@
         }
         .stat-box .value {
           font-size: 38px;
+        }
+        .reason-desktop {
+          display: none;
+        }
+        .reason-mobile {
+          display: inline;
         }
       }
     </style>
@@ -268,7 +278,9 @@
 
         <p class="lead">이용해 주셔서 감사합니다</p>
         <p class="detail">
-          내부 사정으로 인해 서비스를 종료합니다.<br />더 나은
+          <span class="reason-desktop">내부적인 사정으로 인해 서비스를 종료하게 되었습니다.</span
+          ><span class="reason-mobile">내부 사정으로 인해 서비스를 종료합니다.</span
+          ><br />더 나은
           서비스로 돌아오겠습니다.
         </p>
 
